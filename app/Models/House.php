@@ -17,4 +17,44 @@ class House extends Model
         'garages',
         'price'
     ];
+
+    public function scopeName($query, $name)
+    {
+        if($name) {
+            return $query->where('name', $name);
+        }
+        return $query;
+    }
+
+    public function scopeBedrooms($query, $bedrooms)
+    {
+        if($bedrooms) {
+            return $query->where('bedrooms', $bedrooms);
+        }
+        return $query;
+    }
+
+    public function scopeName($query, $name)
+    {
+        if($name) {
+            return $query->where('name', $name);
+        }
+        return $query;
+    }
+
+    public function scopeName($query, $name)
+    {
+        if($name) {
+            return $query->where('name', $name);
+        }
+        return $query;
+    }
+    
+    public function scopeName($query, $name)
+    {
+        if($name) {
+            return $query->where('name', $name);
+        }
+        return $query;
+    }
 }
